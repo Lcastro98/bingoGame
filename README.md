@@ -37,7 +37,27 @@ Aplique todos los conocimientos adquiridos en Cantera Nivel 2.
 El programa no se encuentra terminado 💔.
 
 ## Hecho ✔️
-- Microservicio encargado de la autenticación
+- Microservicio encargado de la autenticación.
+
+Endpoints de acceso a los métodos API REST utilizando el servicio de Heroku y Docker
+
+Registro de usuario
+```plain
+https://bg-auth-ms.herokuapp.com/api/signup
+```
+![alt text](https://github.com/Lcastro98/bingoGame/blob/main/bg-auth-ms/public/images/singup.JPG?raw=true)
+
+Inicio de sesión
+```plain
+https://bg-auth-ms.herokuapp.com/api/signin
+```
+![alt text](https://github.com/Lcastro98/bingoGame/blob/main/bg-auth-ms/public/images/singin.JPG?raw=true)
+
+Verificar validez del token
+```plain
+https://bg-auth-ms.herokuapp.com/api/verifyToken
+```
+![alt text](https://github.com/Lcastro98/bingoGame/blob/main/bg-auth-ms/public/images/verify.JPG?raw=true)
 
 ## Por hacer 📝
 Se encuentra pendiente los puntos 2 (lógica del juego), 3 (API Getway) y 4 (front-end) de la estructura.
