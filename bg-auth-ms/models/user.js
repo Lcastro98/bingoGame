@@ -1,7 +1,18 @@
+/**
+ * Contiene los controladores para realizar la autenticación
+ * 
+ * @version 01.00.00
+ * 
+ * @author Lorena Castro <lcastro0398@gmail.com>
+ */
+
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 var bcrypt = require('bcryptjs');
 
+/**
+ * Esquema de la base de datos
+ */
 var UserSchema = new Schema({
     username: {
         type: String,
@@ -15,6 +26,9 @@ var UserSchema = new Schema({
 
 });
 
+/**
+ * Encripta la clave
+ */
 UserSchema.pre('save', function (next) {
     var user = this;
     if (this.isModified('password') || this.isNew) {
@@ -35,6 +49,11 @@ UserSchema.pre('save', function (next) {
     }
 });
 
+/**
+ * Valida la contraseña
+ * @param {*} passw 
+ * @param {*} cb 
+ */
 UserSchema.methods.comparePassword = function (passw, cb) {
     bcrypt.compare(passw, this.password, function (err, isMatch) {
         if (err) {
