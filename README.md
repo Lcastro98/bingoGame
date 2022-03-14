@@ -45,19 +45,19 @@ Registro de usuario
 ```plain
 https://bg-auth-ms.herokuapp.com/api/signup
 ```
-![alt text](https://github.com/Lcastro98/bingoGame/blob/main/bg-auth-ms/public/images/singup.JPG?raw=true)
+![alt text](https://github.com/Lcastro98/bingoGame/blob/main/bg-auth-ms/public/images/singup.png?raw=true)
 
 Inicio de sesión
 ```plain
 https://bg-auth-ms.herokuapp.com/api/signin
 ```
-![alt text](https://github.com/Lcastro98/bingoGame/blob/main/bg-auth-ms/public/images/singin.JPG?raw=true)
+![alt text](https://github.com/Lcastro98/bingoGame/blob/main/bg-auth-ms/public/images/singin.png?raw=true)
 
 Verificar validez del token
 ```plain
 https://bg-auth-ms.herokuapp.com/api/verifyToken
 ```
-![alt text](https://github.com/Lcastro98/bingoGame/blob/main/bg-auth-ms/public/images/verify.JPG?raw=true)
+![alt text](https://github.com/Lcastro98/bingoGame/blob/main/bg-auth-ms/public/images/verify.png?raw=true)
 
 ## Por hacer 📝
 Se encuentra pendiente los puntos 2 (lógica del juego), 3 (API Getway) y 4 (front-end) de la estructura.
